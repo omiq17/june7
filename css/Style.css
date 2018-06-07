@@ -302,7 +302,7 @@ a.btn:hover {
 
 
 /***********
-  Works  
+  Works, Testimonial  
 ************/
 #works h1, #test h1 {
   text-align: center;
@@ -322,9 +322,12 @@ a.btn:hover {
 margin: 0px 20px;
 }
 
-.slick-slide img {
+#works .slick-slide img {
 width: 100%;
 }
+#test .slick-slide img {
+  width: 35%;
+  }
 
 .slick-prev:before,
 .slick-next:before {
@@ -350,6 +353,12 @@ opacity: 1;
 }
 .slick-next:before {
   color: #fbbc05 !important;
+}
+
+#test .item{
+  text-align: justify;
+  font-family: 'Lato', sans-serif;  
+  
 }
 
 /*************
