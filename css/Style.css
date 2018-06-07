@@ -242,10 +242,9 @@ a.btn:hover {
 #clients .name{
   text-align: center;
   font-weight: bold;
-  font-size: 16px;  
+  font-size: 17px;  
+  color: #fbbc05;
 }
-
-
 
 /*************
  What We Do
@@ -311,7 +310,7 @@ a.btn:hover {
   color: #fbbc05;  
 }
 .sliderT {
-  /* width: 50%; */
+  width: 80%;
   margin: 50px auto;
 }
 .slider {
@@ -370,12 +369,23 @@ opacity: 1;
   color: #fff;  
 }
 
-
+/*************
+ Contact
+*************/
 section#contact {
   background-color: #212529;
   background-image: url("../Images/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
+  font-family: 'Lato', sans-serif;    
+}
+
+#contact h2{
+  text-align: start;
+  font-family: 'Julius Sans One', sans-serif;
+}
+#contact fieldset {
+  color: #fff;  
 }
 
 section#contact .section-heading {
@@ -465,4 +475,15 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
+}
+
+/********* 
+Footer
+********/
+#footer {
+  color: #fbbc05;
+}
+#footer a img{
+  height: 50px;
+  margin: auto;
 }
