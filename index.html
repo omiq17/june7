@@ -22,7 +22,9 @@
                   </div>
 
                   <div class="logo">
-                        Site Logo
+                      <a href="#">
+                          <img src="Images/Logo.png" class="img-responsive" alt="logo">
+                      </a>
                   </div>
 
                   <div class="menu">
@@ -56,9 +58,6 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6 name">
-            <!-- <a href="#">
-              <img class="img-fluid d-block mx-auto" src="Images/logos/envato.jpg" alt="">
-            </a> -->
             <p>CLIENTS</p>
           </div>
           <div class="col-md-3 col-sm-6">
@@ -124,6 +123,35 @@
           </div>
         </div>
     </div>
+
+        <!-- How We Do -->
+
+        <div id="how">
+          <h1>HOW WE DO</h1>
+          <p>We provide a set of digital marketing services tailored to fulfil your business goals. </p>
+        </div>
+    
+        <!-- Testimonials -->
+        <div id="test">
+            <h1>TESTIMONIALS</h1>
+            <div class="sliderT">
+                <div >
+                  <img src="http://fillmurray.com/300/300" alt="" class="img-responsive" />
+                </div>
+                <div >
+                  <img src="http://fillmurray.com/300/300" alt="" class="img-responsive" />
+                </div>
+                <div >
+                  <img src="http://fillmurray.com/300/300" alt="" class="img-responsive" />
+                </div>
+                <div >
+                  <img src="http://fillmurray.com/300/300" alt="" class="img-responsive" />
+                </div>
+                <div >
+                  <img src="http://fillmurray.com/300/300" alt="" class="img-responsive" />
+                </div>
+              </div>
+          </div>
 
 <!-- Contact -->
     <section id="contact">
@@ -223,17 +251,39 @@
                   $("nav ul").toggleClass("showing");
             });
 
-          $(".slider").slick({
-              // dots: true,
-              infinite: true,
-              speed: 300,
-              slidesToShow: 1,
+            $(".slider").slick();
+
+          // $(".sliderT").slick({
+          //     infinite: true,
+          //     speed: 300,
+          //     slidesToShow: 1,
+          //     centerMode: true,
+          //     variableWidth: true,
+          //   });
+          $('.sliderT').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+              arrows: false,
               centerMode: true,
-              variableWidth: true,
-              autoplay:true,
-              autoplaySpeed: 1000,
-              prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-              nextArrow: '<button type="button" class="slick-next">Next</button>'
+              centerPadding: '40px',
+              slidesToShow: 3
+             }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+              }
+            }
+            ]
             });
    
       });
